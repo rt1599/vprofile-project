@@ -12,4 +12,4 @@ LABEL "Author"="Rishabh"
 RUN rm -rf /usr/local/tomcat/webapps/*
 COPY --from=BUILD_IMAGE vprofile-project/target/vprofile-v2.war /usr/local/tomcat/webapps/ROOT.war
 EXPOSE 8080
-CMD ["/opt/tomcat/bin/catalina.sh", "run"]
+CMD ["catalina.sh", "run"]
